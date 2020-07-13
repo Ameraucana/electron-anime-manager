@@ -1,0 +1,21 @@
+{
+  "name": "anime",
+  "version": "1.0.0",
+  "description": "Visual AniList API interface",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "package-win": "electron-packager . --overwrite --prune=true --out=release-builds --verion-string.FileDescription=CE --icon=icon.ico --version-string.Productname=\"Anime\""
+  },
+  "author": "Me",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-builder": "^22.5.1",
+    "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "sqlite3": "^4.1.1"
+  }
+}
